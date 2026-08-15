@@ -8,7 +8,7 @@ export default function FinalCTA() {
   return (
     <section id="cta" className="relative overflow-hidden">
       <img
-        src="/images/harvest.jpg"
+        src="/final-cta.jpg"
         alt="Harvest-ready field in warm afternoon light"
         className="absolute inset-0 h-full w-full object-cover"
       />
