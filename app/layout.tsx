@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   title: "Sagani — Know what's coming. Protect what you grow.",
   description:
     "Sagani turns weather, water, and crop data into timely insights—helping farmers make better decisions before climate risks affect their harvest. With Sagani, makakasiguro ka sa iyong ani.",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

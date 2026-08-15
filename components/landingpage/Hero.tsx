@@ -19,7 +19,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-r from-soil/85 via-soil/60 to-soil/20" />
       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-soil/30" />
 
-      <div className="relative mx-auto w-full max-w-7xl px-5 pb-28 pt-36 sm:px-8">
+      <div className="relative w-full px-5 pb-28 pt-36 sm:px-8">
         <div className="max-w-2xl">
           <motion.p
             initial={{ opacity: 0, y: 16 }}

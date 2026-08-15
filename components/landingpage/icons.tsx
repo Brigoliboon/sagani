@@ -157,6 +157,25 @@ export function ArrowRightIcon({ className = "h-4 w-4" }: IconProps) {
   );
 }
 
+export function WalletIcon({ className = "h-5 w-5" }: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden="true">
+      <rect x="3" y="5.5" width="18" height="13" rx="2.5" stroke="currentColor" strokeWidth="1.6" />
+      <path d="M3 9h18" stroke="currentColor" strokeWidth="1.6" />
+      <circle cx="16.5" cy="14.5" r="1.3" fill="currentColor" />
+    </svg>
+  );
+}
+
+export function DownloadIcon({ className = "h-5 w-5" }: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden="true">
+      <path d="M12 4v11M7.5 10.5L12 15l4.5-4.5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M4 19h16" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+    </svg>
+  );
+}
+
 export function LogoMark({ className = "h-8 w-8" }: IconProps) {
   return (
     <svg viewBox="0 0 32 32" className={className} aria-hidden="true">

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import type { AnchorHTMLAttributes, ReactNode } from "react";
 
 type Variant = "primary" | "outlineLight" | "outlineDark";
@@ -14,20 +15,22 @@ const variants: Record<Variant, string> = {
   outlineDark: "border border-soil/15 bg-white px-7 py-3.5 text-soil hover:border-sagani hover:text-sagani",
 };
 
-type ButtonProps = AnchorHTMLAttributes<HTMLAnchorElement> & {
+type ButtonProps = Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "href"> & {
+  href: string;
   variant?: Variant;
   children: ReactNode;
 };
 
 export function Button({
+  href,
   variant = "primary",
   className = "",
   children,
   ...rest
 }: ButtonProps) {
   return (
-    <a {...rest} className={`${base} ${variants[variant]} ${className}`}>
+    <Link href={href} className={`${base} ${variants[variant]} ${className}`} {...rest}>
       {children}
-    </a>
+    </Link>
   );
 }

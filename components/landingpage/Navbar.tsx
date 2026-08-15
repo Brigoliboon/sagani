@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { AnimatePresence, motion } from "motion/react";
 import { LogoMark } from "./icons";
 
@@ -54,12 +55,12 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
-          <a
-            href="#cta"
+          <Link
+            href="/water"
             className="rounded-full bg-sagani px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-sagani/25 transition-colors hover:bg-soil"
           >
             Get Started
-          </a>
+          </Link>
         </div>
 
         <button
@@ -100,13 +101,13 @@ export default function Navbar() {
                   {link.label}
                 </a>
               ))}
-              <a
-                href="#cta"
+              <Link
+                href="/water"
                 onClick={() => setOpen(false)}
                 className="mt-2 rounded-full bg-sagani px-5 py-3 text-center text-sm font-semibold text-white"
               >
                 Get Started
-              </a>
+              </Link>
             </div>
           </motion.div>
         ) : null}
