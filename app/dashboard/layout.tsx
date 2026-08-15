@@ -1,10 +1,10 @@
-import Sidebar from "@/components/dashboard/Sidebar";
+import TopNavbar from "@/components/app/TopNavbar";
 
 export default function DashboardLayout({ children }: LayoutProps<"/dashboard">) {
   return (
-    <div className="flex h-dvh overflow-hidden bg-mist">
-      <Sidebar />
-      <main className="min-w-0 flex-1 overflow-hidden">{children}</main>
+    <div className="flex min-h-dvh flex-col bg-mist">
+      <TopNavbar />
+      <main className="min-w-0 flex-1">{children}</main>
     </div>
   );
 }

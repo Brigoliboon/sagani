@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { AppHeader } from "@/components/app/AppHeader";
+import TopNavbar from "@/components/app/TopNavbar";
 import {
   formatWeatherDate,
   formatWeatherTimestamp,
@@ -11,7 +11,7 @@ import {
 
 export const metadata: Metadata = {
   title: "Current Weather | Sagani",
-  description: "A mock weather outlook and practical farm actions for the Sagani demo farm.",
+  description: "Current and forecast weather, plus practical farm actions for Sagani farms.",
 };
 
 type IconProps = { className?: string };
@@ -129,7 +129,7 @@ export default function WeatherPage() {
       ? "Live data"
       : weather.dataState === "CACHED_REAL_DATA"
         ? "Cached data"
-        : "Demo data";
+        : "Sample data";
   const stateDetail =
     weather.dataState === "LIVE_REAL_DATA"
       ? "Current provider feed"
@@ -139,7 +139,7 @@ export default function WeatherPage() {
 
   return (
     <div className="min-h-screen bg-mist">
-      <AppHeader activePath="/weather" />
+      <TopNavbar />
 
       <main className="mx-auto max-w-7xl px-5 pb-12 pt-8 sm:px-8 sm:pb-16 sm:pt-12 lg:px-10">
         <section className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">

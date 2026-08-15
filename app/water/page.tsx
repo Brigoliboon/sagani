@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import {
   CROP_OPTIONS,
   WATER_FARM_SCENARIO,
@@ -9,8 +8,8 @@ import {
 } from "@/constants/water";
 import type { WaterReport } from "@/constants/water";
 import { Reveal } from "@/components/landingpage/Reveal";
+import TopNavbar from "@/components/app/TopNavbar";
 import {
-  LogoMark,
   LeafIcon,
   DropletIcon,
   ClockIcon,
@@ -85,17 +84,7 @@ export default function WaterPage() {
 
   return (
     <>
-      <header className="sticky top-0 z-50 border-b border-soil/10 bg-white/95 backdrop-blur-md">
-        <div className="flex h-16 w-full items-center justify-between px-5 sm:px-8">
-          <Link href="/" className="flex items-center gap-2.5">
-            <LogoMark />
-            <span className="font-display text-xl font-semibold text-soil">Sagani</span>
-          </Link>
-          <Link href="/" className="text-sm font-medium text-sagani transition-colors hover:text-soil">
-            ← Back to home
-          </Link>
-        </div>
-      </header>
+      <TopNavbar />
 
       <main className="w-full px-5 py-12 sm:px-8 sm:py-16">
         <Reveal className="w-full sm:w-3/4 lg:w-1/2">
