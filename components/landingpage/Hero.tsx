@@ -17,7 +17,7 @@ export default function Hero() {
         transition={{ opacity: { duration: 1.2, ease: "easeOut" }, scale: { duration: 14, ease: "easeOut" } }}
       />
       <div className="absolute inset-0 bg-gradient-to-r from-soil/85 via-soil/60 to-soil/20" />
-      <div className="absolute inset-0 bg-gradient-to-t from-mist via-transparent to-soil/30" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-soil/30" />
 
       <div className="relative mx-auto w-full max-w-7xl px-5 pb-28 pt-36 sm:px-8">
         <div className="max-w-2xl">
