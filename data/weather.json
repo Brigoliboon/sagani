@@ -1,0 +1,95 @@
+{
+  "farmName": "Sagani Demo Farm",
+  "locationLabel": "Lantapan, Bukidnon",
+  "coordinatesLabel": "8.00° N, 124.98° E",
+  "temperatureC": 29,
+  "feelsLikeC": 32,
+  "humidityPct": 78,
+  "rainChancePct": 72,
+  "windKph": 11,
+  "condition": "Partly cloudy",
+  "seasonLabel": "Wet season",
+  "seasonDetail": "Southwest monsoon period",
+  "summary": "Warm and humid this afternoon, with clouds continuing to build over the farm.",
+  "forecastSummary": "Rain is likely within the next 24 hours, with the heaviest showers expected late this afternoon into early evening.",
+  "flags": [
+    "Rain likely",
+    "High humidity",
+    "Warm afternoon"
+  ],
+  "observedAt": "2026-08-15T14:00:00+08:00",
+  "forecastUpdatedAt": "2026-08-15T13:30:00+08:00",
+  "retrievedAt": "2026-08-15T14:05:00+08:00",
+  "sourceName": "Sagani local weather JSON",
+  "dataState": "SIMULATED_DATA",
+  "forecast": [
+    {
+      "date": "2026-08-15",
+      "label": "Today",
+      "condition": "Afternoon rain",
+      "icon": "rain",
+      "highC": 31,
+      "lowC": 23,
+      "rainChancePct": 72
+    },
+    {
+      "date": "2026-08-16",
+      "label": "Sun",
+      "condition": "Rain showers",
+      "icon": "rain",
+      "highC": 30,
+      "lowC": 23,
+      "rainChancePct": 80
+    },
+    {
+      "date": "2026-08-17",
+      "label": "Mon",
+      "condition": "Cloudy, some rain",
+      "icon": "cloudy",
+      "highC": 29,
+      "lowC": 22,
+      "rainChancePct": 66
+    },
+    {
+      "date": "2026-08-18",
+      "label": "Tue",
+      "condition": "Partly cloudy",
+      "icon": "partly-cloudy",
+      "highC": 30,
+      "lowC": 22,
+      "rainChancePct": 48
+    },
+    {
+      "date": "2026-08-19",
+      "label": "Wed",
+      "condition": "Partly cloudy",
+      "icon": "partly-cloudy",
+      "highC": 31,
+      "lowC": 23,
+      "rainChancePct": 42
+    }
+  ],
+  "mitigations": [
+    {
+      "code": "DELAY_IRRIGATION",
+      "title": "Pause routine watering",
+      "detail": "Rain is likely soon. Check the soil again after the expected showers before using stored water.",
+      "timing": "Recheck tomorrow morning",
+      "tone": "water"
+    },
+    {
+      "code": "CLEAR_DRAINAGE",
+      "title": "Keep drainage paths clear",
+      "detail": "High humidity and repeated showers may leave low areas saturated. Remove visible blockages before rain starts.",
+      "timing": "Before 4:00 PM",
+      "tone": "watch"
+    },
+    {
+      "code": "PROTECT_INPUTS",
+      "title": "Protect fertilizer and supplies",
+      "detail": "Keep bagged inputs covered and avoid surface application immediately before rain to reduce runoff and waste.",
+      "timing": "For the next 24 hours",
+      "tone": "safe"
+    }
+  ]
+}
