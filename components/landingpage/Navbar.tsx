@@ -55,7 +55,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#cta"
+            href="/dashboard"
             className="rounded-full bg-sagani px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-sagani/25 transition-colors hover:bg-soil"
           >
             Get Started
@@ -101,7 +101,7 @@ export default function Navbar() {
                 </a>
               ))}
               <a
-                href="#cta"
+                href="/dashboard"
                 onClick={() => setOpen(false)}
                 className="mt-2 rounded-full bg-sagani px-5 py-3 text-center text-sm font-semibold text-white"
               >

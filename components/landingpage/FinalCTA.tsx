@@ -22,7 +22,7 @@ export default function FinalCTA() {
           <p className="mt-5 text-lg text-white/80">Start making smarter decisions with Sagani.</p>
           <div className="mt-9 flex justify-center">
             <Button
-              href="#top"
+              href="/dashboard"
               className="px-8 py-4 text-base"
             >
               Get Started
