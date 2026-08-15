@@ -55,7 +55,7 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.4, ease: "easeOut" }}
             className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center"
           >
-            <Button href="#cta">Get Started</Button>
+            <Button href="/dashboard">Get Started</Button>
             <Button href="#how-it-works" variant="outlineLight">
               See How It Works
             </Button>

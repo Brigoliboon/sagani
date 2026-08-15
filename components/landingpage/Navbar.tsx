@@ -55,8 +55,8 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
-          <Link
-            href="/water"
+<Link
+            href="/dashboard"
             className="rounded-full bg-sagani px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-sagani/25 transition-colors hover:bg-soil"
           >
             Get Started
@@ -101,8 +101,8 @@ export default function Navbar() {
                   {link.label}
                 </a>
               ))}
-              <Link
-                href="/water"
+<Link
+                href="/dashboard"
                 onClick={() => setOpen(false)}
                 className="mt-2 rounded-full bg-sagani px-5 py-3 text-center text-sm font-semibold text-white"
               >
